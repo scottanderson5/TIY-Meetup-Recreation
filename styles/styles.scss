@@ -1,0 +1,156 @@
+$tot-width: 100%;
+$num-col: 12;
+$gut-width: 2%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+
+@mixin grid($geezy){
+  width: ($geezy * $ind-col-width) + ($gut-width * ($geezy - 1));
+  /*float: left;*/
+  margin-right: $gut-width;
+  /*&:last-child {
+    margin-right: 0;
+  }*/
+}
+
+/***********************************/
+
+.nav-ul-1 {
+	box-sizing: border-box;
+	margin-top: 0;
+	margin-left: 0;
+	padding-left: 0;
+	padding-top: 1em;
+	margin-bottom: 0;
+	overflow: hidden;
+
+}
+
+%top-col {
+	height: 2em;
+	padding: 0.5em;
+	list-style-type: none;
+
+}
+
+.a-nav {
+	text-decoration: none;
+  color: #878787;
+}
+
+.nav-col-1 {
+	@extend %top-col;
+	float: left;
+
+}
+
+%col-topBS {
+	font-family: helvetica, arial, sans-serif;
+	text-align: left;
+	display: block;
+}
+
+.col-topBig {
+	@extend %col-topBS;
+	font-size: 1.5em;
+	color: #E0393E;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.col-topSmall {
+	@extend %col-topBS;
+	font-size: 0.813em;
+	font-weight: 300;
+	color: #878787;
+	line-height: 1.4;
+}
+
+
+%top-col-right {
+	@extend %top-col;
+	color: red;
+	float: right;
+	font-family: helvetica, arial, sans-serif;
+	padding: 0.5em;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.5em;
+
+}
+
+.nav-col-2 {
+	@extend %top-col-right;
+	/*float: right;
+	color: #878787;
+	padding-top: none;
+	text-align: center;*/
+}
+
+/***************************************/
+
+.main-box {
+	background-color: #F4F4F4;
+  border: 1px solid #F4F4F4;
+  padding-top: 1em;
+
+}
+
+.banner{
+  @include grid(9);
+  padding: 0;
+  margin: 0 auto;
+  /*height: 9.375em;*/
+  /*background-color: #59636A;*/
+  border: 1px solid #ddd;
+  border-radius: 0.188em;
+  box-sizing: border-box;
+  width: 59.875em;
+}
+
+.div-header{
+  background-image: url(http://photos1.meetupstatic.com/photos/theme_head/7/6/2/0/full_6870240.jpeg);
+  height: 9.375em;
+  background-position: top center;
+  background-repeat: no repeat;
+  padding: 0;
+}
+
+.div-header-wrap{
+  background-color: #59636A;
+  padding: 0.5em;
+}
+
+.header-logos{
+  padding: 0.375em 0.25em;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: red;
+  box-sizing: border-box;
+}
+
+
+%header-deco{
+  display: inline-block;
+  list-style-type: none;
+  font-size: 1em;
+  height: 1em;
+  text-decoration: none;
+  color: #878787;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.header-ul-A{
+  @extend %header-deco;
+  float: left;
+}
+
+.header-ul-B{
+  @extend %header-deco;
+  float: right;
+}
+
+.a-header{
+	text-decoration: none;
+  color: #878787;
+}
