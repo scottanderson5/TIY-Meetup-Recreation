@@ -106,38 +106,34 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   border-radius: 0.188em;
   box-sizing: border-box;
   width: 59.875em;
+  overflow: hidden;
 }
 
 .div-header{
   background-image: url(http://photos1.meetupstatic.com/photos/theme_head/7/6/2/0/full_6870240.jpeg);
   height: 9.375em;
-  background-position: top center;
-  background-repeat: no repeat;
+  background-position: top-center;
+  background-repeat: no-repeat;
   padding: 0;
 }
 
 .div-header-wrap{
   background-color: #59636A;
-  padding: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .header-logos{
-  padding: 0.375em 0.25em;
-  overflow: hidden;
+  height: 3em;
   margin: 0 auto;
-  background-color: red;
-  box-sizing: border-box;
+  background-color: white;
 }
 
 
 %header-deco{
-  display: inline-block;
   list-style-type: none;
-  font-size: 1em;
   height: 1em;
-  text-decoration: none;
-  color: #878787;
-  font-family: helvetica, arial, sans-serif;
+  padding-left: 0;
 }
 
 .header-ul-A{
@@ -148,9 +144,43 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .header-ul-B{
   @extend %header-deco;
   float: right;
+  margin-top: 0.2em;
+}
+
+%li-header-deco{
+  font-family: helvetica, arial, sans-serif;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: 1em;
+  display: inline-block;
+  margin-left: 0.5em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.li-header-A {
+  @extend %li-header-deco;
+  padding-top: 0.2em;
+}
+
+.li-header-B {
+  @extend %li-header-deco;
+  margin-right: 1em;
+  padding-top: 0;
 }
 
 .a-header{
-	text-decoration: none;
+  text-decoration: none;
   color: #878787;
 }
+
+
+
+
+
+
+
+
+
+
+
