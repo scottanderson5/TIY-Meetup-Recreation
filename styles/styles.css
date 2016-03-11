@@ -54,12 +54,20 @@
 
 /***************************************/
 .main-box {
+  width: 100%;
+  /*float: left;*/
+  margin-right: 2%;
+  /*&:last-child {
+    margin-right: 0;
+  }*/
   background-color: #F4F4F4;
-  border: 1px solid #F4F4F4;
-  padding-top: 1em; }
+  border-top: 1px solid #F4F4F4;
+  padding-top: 1em;
+  overflow: hidden; }
 
+/***************************************/
 .banner {
-  width: 74.5%;
+  width: 83%;
   /*float: left;*/
   margin-right: 2%;
   /*&:last-child {
@@ -69,11 +77,13 @@
   margin: 0 auto;
   /*height: 9.375em;*/
   /*background-color: #59636A;*/
-  border: 1px solid #ddd;
-  border-radius: 0.188em;
   box-sizing: border-box;
-  width: 59.875em;
+  /*width: 59.875em;*/
   overflow: hidden; }
+
+.banner-wrap {
+  border: 1px solid #ddd;
+  border-radius: 0.188em; }
 
 .div-header {
   background-image: url(http://photos1.meetupstatic.com/photos/theme_head/7/6/2/0/full_6870240.jpeg);
@@ -119,10 +129,31 @@
 
 .li-header-B {
   margin-right: 1em;
-  padding-top: 0; }
+  padding-top: 0;
+  text-align: center; }
 
 .a-header {
   text-decoration: none;
-  color: #878787; }
+  color: #878787;
+  text-align: center; }
+
+.profile-logo {
+  width: 1.5em;
+  padding-top: 0.4em;
+  margin-right: 0.2em; }
+
+/***********************************************/
+.left-info-box {
+  width: 23.5%;
+  /*float: left;*/
+  margin-right: 2%;
+  /*&:last-child {
+    margin-right: 0;
+  }*/
+  border: 1px solid #ddd;
+  border-radius: 0.188em;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 1em; }
 
 /*# sourceMappingURL=styles.css.map */

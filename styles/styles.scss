@@ -90,23 +90,30 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /***************************************/
 
 .main-box {
+  @include grid(12);
 	background-color: #F4F4F4;
-  border: 1px solid #F4F4F4;
+  border-top: 1px solid #F4F4F4;
   padding-top: 1em;
+  overflow: hidden;
 
 }
 
+/***************************************/
+
 .banner{
-  @include grid(9);
+  @include grid(10);
   padding: 0;
   margin: 0 auto;
   /*height: 9.375em;*/
   /*background-color: #59636A;*/
+  box-sizing: border-box;
+  /*width: 59.875em;*/
+  overflow: hidden;
+}
+
+.banner-wrap{
   border: 1px solid #ddd;
   border-radius: 0.188em;
-  box-sizing: border-box;
-  width: 59.875em;
-  overflow: hidden;
 }
 
 .div-header{
@@ -167,12 +174,32 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   @extend %li-header-deco;
   margin-right: 1em;
   padding-top: 0;
+  text-align: center;
 }
 
 .a-header{
   text-decoration: none;
   color: #878787;
+  text-align: center;
 }
+
+.profile-logo{
+  width: 1.5em;
+  padding-top: 0.4em;
+  margin-right: 0.2em;
+}
+
+/***********************************************/
+
+.left-info-box{
+  @include grid(3);
+  border: 1px solid #ddd;
+  border-radius: 0.188em;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 1em;
+}
+
 
 
 
