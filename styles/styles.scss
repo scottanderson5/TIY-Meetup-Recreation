@@ -20,7 +20,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	margin-top: 0;
 	margin-left: 0;
 	padding-left: 0;
-	padding-top: 1em;
+	padding-top: 0.5em;
 	margin-bottom: 0;
 	overflow: hidden;
 
@@ -31,6 +31,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 	padding: 0.5em;
 	list-style-type: none;
 
+}
+
+.home-logo{
+  width: 3.2em;
 }
 
 .a-nav {
@@ -114,6 +118,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .banner-wrap{
   border: 1px solid #ddd;
   border-radius: 0.188em;
+  max-width: 59.875em;
 }
 
 .div-header{
@@ -174,30 +179,50 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   @extend %li-header-deco;
   margin-right: 1em;
   padding-top: 0;
-  text-align: center;
 }
 
 .a-header{
   text-decoration: none;
   color: #878787;
-  text-align: center;
 }
 
 .profile-logo{
-  width: 1.5em;
+  width: 1.35em;
   padding-top: 0.4em;
   margin-right: 0.2em;
 }
 
 /***********************************************/
 
-.left-info-box{
-  @include grid(3);
+.row{
+  overflow: hidden;
+}
+
+%info-box-deco{
   border: 1px solid #ddd;
   border-radius: 0.188em;
   box-sizing: border-box;
   background-color: white;
   margin-top: 1em;
+  text-align: center;
+  float: left;
+}
+
+.left-info-box{
+  @include grid(3);
+  @extend %info-box-deco;
+  
+}
+
+.middle-info-box{
+  @include grid(5);
+  @extend %info-box-deco;
+  padding-left: 1em;
+
+}
+
+.h-style{
+  text-align: left;
 }
 
 
