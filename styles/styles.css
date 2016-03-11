@@ -72,40 +72,54 @@
   border: 1px solid #ddd;
   border-radius: 0.188em;
   box-sizing: border-box;
-  width: 59.875em; }
+  width: 59.875em;
+  overflow: hidden; }
 
 .div-header {
   background-image: url(http://photos1.meetupstatic.com/photos/theme_head/7/6/2/0/full_6870240.jpeg);
   height: 9.375em;
-  background-position: top center;
-  background-repeat: no repeat;
+  background-position: top-center;
+  background-repeat: no-repeat;
   padding: 0; }
 
 .div-header-wrap {
   background-color: #59636A;
-  padding: 0.5em; }
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
 
 .header-logos {
-  padding: 0.375em 0.25em;
-  overflow: hidden;
+  height: 3em;
   margin: 0 auto;
-  background-color: red;
-  box-sizing: border-box; }
+  background-color: white; }
 
 .header-ul-A, .header-ul-B {
-  display: inline-block;
   list-style-type: none;
-  font-size: 1em;
   height: 1em;
-  text-decoration: none;
-  color: #878787;
-  font-family: helvetica, arial, sans-serif; }
+  padding-left: 0; }
 
 .header-ul-A {
   float: left; }
 
 .header-ul-B {
-  float: right; }
+  float: right;
+  margin-top: 0.2em; }
+
+.li-header-A, .li-header-B {
+  font-family: helvetica, arial, sans-serif;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: 1em;
+  display: inline-block;
+  margin-left: 0.5em;
+  font-weight: 400;
+  line-height: 1em; }
+
+.li-header-A {
+  padding-top: 0.2em; }
+
+.li-header-B {
+  margin-right: 1em;
+  padding-top: 0; }
 
 .a-header {
   text-decoration: none;
