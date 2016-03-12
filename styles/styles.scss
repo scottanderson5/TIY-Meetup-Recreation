@@ -211,22 +211,21 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   float: left;
 }
 
+/********** Left Info Box *********************/
+
 .left-info-box{
   @include grid(3);
   @extend %info-box-deco;
   
 }
 
+/********** Middle Info Box ********************/
+
 .middle-info-box{
   @include grid(5);
   @extend %info-box-deco;
   padding-left: 1em;
 
-}
-
-.right-info-box{
-  @include grid(3);
-  @extend %info-box-deco;
 }
 
 .mid-h-wrap{
@@ -251,11 +250,26 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   margin-bottom: 0.1em;
 }
 
+.mid-a-icon{
+  color: black;
+}
+
 .middle-box-a{
   font-family: helvetica, arial, sans-serif;
   color: #6FBBB7;
   text-decoration: none;
   margin-top: 0;
+  font-weight: 300;
+  font-size: 1em;
+  padding-left: 0.3em;
+  line-height: 1em;
+}
+
+/************** Right Info Box *****************/
+
+.right-info-box{
+  @include grid(3);
+  @extend %info-box-deco;
 }
 
 .right-h-wrap{
