@@ -1,5 +1,5 @@
 $tot-width: 100%;
-$num-col: 12;
+$num-col: 15;
 $gut-width: 2%;
 
 $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
@@ -94,7 +94,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /***************************************/
 
 .main-box {
-  @include grid(12);
+  @include grid(15);
 	background-color: #F4F4F4;
   border-top: 1px solid #F4F4F4;
   padding-top: 1em;
@@ -107,7 +107,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /***************************************/
 
 .banner{
-  @include grid(10);
+  @include grid(13);
   padding: 0;
   margin: 0 auto;
   /*height: 9.375em;*/
@@ -222,7 +222,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /********** Middle Info Box ********************/
 
 .middle-info-box{
-  @include grid(5);
+  @include grid(7.5);
   @extend %info-box-deco;
   padding-left: 1em;
 
@@ -234,24 +234,29 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   padding-left: 0.5em;
 }
 
-.h-style{
-  text-align: left;
+%h-style-deco{
   font-family: helvetica, arial, sans-serif;
   margin-top: 0.5em;
   margin-bottom: 0;
   padding-bottom: 0.5em;
 }
 
-.mid-a-wrap{
+.h-style-mid{
+  @extend %h-style-deco;
+  text-align: left;
+}
+
+%mid-a-deco{
   background-color: #F4F4F4;
   text-align: left;
   padding: 1em;
   margin-right: 0.5em;
   margin-bottom: 0.1em;
+  overflow: hidden;
 }
 
-.mid-a-icon{
-  color: black;
+.mid-a-wrap{
+  @extend %mid-a-deco;
 }
 
 .middle-box-a{
@@ -265,22 +270,260 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   line-height: 1em;
 }
 
+.mid-a-wrapB{
+  @extend %mid-a-deco;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+%tab-deco{
+  width: auto;
+  height: 0.6em;
+  text-align: center;
+  color: #6FBBB7;
+  font-weight: 300;
+  float: left;
+  text-decoration: none;
+  padding: 0.4em 0.65em 0.65em 0.65em;
+}
+
+.mid-box-2a{
+  @extend %tab-deco;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.mid-box-2b{
+  @extend %tab-deco;
+  background-color: #F7F7F7;
+  border: 1px solid #ddd;
+}
+
+.mid-box-ul{
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.mid-box-li{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  text-align: left;
+  padding-top: 0.7em;
+  padding-bottom: 2em;
+}
+
+.h-style-li{
+  color: #6FBBB7;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.15em;
+  line-height: 1em;
+}
+
+.inward-midBox{
+  border-top: 1px solid #F4F4F4;
+  overflow: hidden;
+  margin-top: 0.7em;
+}
+
+.info-box{
+  float: left;
+  border-right: 1px dashed #F4F4F4;
+  width: 68%;
+  padding-top: 0.3em;
+}
+
+.campus-info{
+  padding-bottom: 0.2em;
+}
+
+.tiy{
+  font-family: helvetica, arial, sans-serif;
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  color: #6FBBB7;
+}
+
+.address{
+  font-family: helvetica, arial, sans-serif;
+  text-align: left;
+  display: block;
+  color: #575757;
+  font-weight: 300;
+  padding-top: 0.3em;
+  font-size: 0.85em;
+}
+
+.map{
+  color: #6FBBB7;
+  text-decoration: none;
+}
+
+.pic-list{
+  list-style-type: none;
+  overflow: hidden;
+  padding-left: 0;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.li-pic{
+  list-style-type: none;
+  float: left;
+  padding-right: 0.2em;
+}
+
+.pic-style{
+  width: 1.6em;
+}
+
+.arrow-style{
+  font-size: 1.45em;
+  padding-left: 0.1em;
+  text-align: center;
+  color: #6FBBB7;
+  background-color: #D7E9F6;
+}
+
+.p-style{
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.35em;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #575757;
+  padding-bottom: 0.3em;
+}
+
+.learn-more{
+  color: #6FBBB7;
+  font-size: 0.5em;
+  font-weight: 300;
+  font-family: helvetica, arial, sans-serif;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.host-by{
+  color: #575757;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+
+}
+
+.learn-a{
+  text-decoration: none;
+  color: #6FBBB7;
+}
+
+.host-a{
+  text-decoration: none;
+  color: #6FBBB7;
+}
+
+/*****/
+
+.date-time{
+  float: right;
+  width: 30%;
+  padding-top: 0.3em;
+}
+
+.mid-list{
+  list-style-type: none;
+  padding-left: 0;
+}
+.thedt{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.date{
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1;
+  color: #575757;
+  font-weight: 300;
+  text-align: center;
+}
+
+.time{
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  color: #575757;
+  text-align: center;
+  font-size: 0.9em;
+  display: block;
+  text-align: left;
+  padding-top: 0.3em;
+}
+
+.rsvp-but{
+  background-color: #F4F4F4;
+  color: #6FBBB7;
+  padding: 0.5em;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  font-weight: 400;
+  border-radius: 0.188em;
+  width: 85%;
+  text-align: left;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.rsvp-wrap{
+  background-color: #EEEEEE;
+  text-align: center;
+  margin-top: 0.03em;
+  margin-bottom: 0.03em;
+  width: 85.5%;
+  border-radius: 0.188em;
+}
+
+.rsvp-a{
+  text-decoration: none;
+}
+
+.att-li{
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  text-align: left;
+}
+
+.att-a{
+  font-family: helvetica, arial, sans-serif;
+  text-decoration: none;
+  color: #6FBBB7;
+  font-size: 0.9em;
+}
+
+
 /************** Right Info Box *****************/
 
 .right-info-box{
-  @include grid(3);
+  @include grid(3.5);
   @extend %info-box-deco;
 }
 
 .right-h-wrap{
   padding-top: 0.5em;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
-  text-align: left;
+  padding-right: 1em;
+  padding-left: 1em;
+  text-align: center;
 }
 
-.right-img{
-  text-align: center;
+.h-style-right{
+  @extend %h-style-deco;
+  text-align: left;
 }
 
 
