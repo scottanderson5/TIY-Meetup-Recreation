@@ -66,7 +66,9 @@
   background-color: #F4F4F4;
   border-top: 1px solid #F4F4F4;
   padding-top: 1em;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto; }
 
 /***************************************/
 .banner {
@@ -146,9 +148,10 @@
 
 /***********************************************/
 .row {
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 65.6em; }
 
-.left-info-box, .middle-info-box {
+.left-info-box, .middle-info-box, .right-info-box {
   border: 1px solid #ddd;
   border-radius: 0.188em;
   box-sizing: border-box;
@@ -174,7 +177,46 @@
   }*/
   padding-left: 1em; }
 
+.right-info-box {
+  width: 23.5%;
+  /*float: left;*/
+  margin-right: 2%;
+  /*&:last-child {
+    margin-right: 0;
+  }*/ }
+
+.mid-h-wrap {
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 0.5em; }
+
 .h-style {
+  text-align: left;
+  font-family: helvetica, arial, sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  padding-bottom: 0.5em; }
+
+.mid-a-wrap {
+  background-color: #F4F4F4;
+  text-align: left;
+  padding: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.1em; }
+
+.middle-box-a {
+  font-family: helvetica, arial, sans-serif;
+  color: #6FBBB7;
+  text-decoration: none;
+  margin-top: 0; }
+
+.right-h-wrap {
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
   text-align: left; }
+
+.right-img {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

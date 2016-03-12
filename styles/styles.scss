@@ -99,6 +99,8 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   border-top: 1px solid #F4F4F4;
   padding-top: 1em;
   overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
 
 }
 
@@ -196,6 +198,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .row{
   overflow: hidden;
+  max-width: 65.6em;
 }
 
 %info-box-deco{
@@ -221,10 +224,50 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 }
 
+.right-info-box{
+  @include grid(3);
+  @extend %info-box-deco;
+}
+
+.mid-h-wrap{
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
 .h-style{
+  text-align: left;
+  font-family: helvetica, arial, sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+}
+
+.mid-a-wrap{
+  background-color: #F4F4F4;
+  text-align: left;
+  padding: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.1em;
+}
+
+.middle-box-a{
+  font-family: helvetica, arial, sans-serif;
+  color: #6FBBB7;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.right-h-wrap{
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
   text-align: left;
 }
 
+.right-img{
+  text-align: center;
+}
 
 
 
