@@ -223,7 +223,8 @@
   font-weight: 300;
   float: left;
   text-decoration: none;
-  padding: 0.4em 0.65em 0.65em 0.65em; }
+  padding: 0.4em 0.65em 0.65em 0.65em;
+  border-radius: 0.188em; }
 
 .mid-box-2a {
   background-color: white;
@@ -241,7 +242,7 @@
   margin-top: 0; }
 
 .mid-box-li {
-  border-top: 1px solid #ddd;
+  /*border-top: 1px solid #ddd;*/
   border-bottom: 1px solid #ddd;
   background-color: white;
   text-align: left;
@@ -410,6 +411,59 @@
   text-decoration: none;
   color: #6FBBB7;
   font-size: 0.9em; }
+
+/**********/
+.box-recurring {
+  background-color: #F4F4F4;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.1em;
+  padding-top: 0;
+  overflow: hidden; }
+
+.h-recurring {
+  font-family: helvetica, arial, sans-serif;
+  margin-top: 0.5em;
+  line-height: 1.35em; }
+
+.repeat-box {
+  overflow: hidden; }
+
+.first-re {
+  float: left;
+  color: #6FBBB7;
+  width: 50%;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  line-height: 1.25em;
+  font-family: helvetica, arial, sans-serif; }
+
+.second-re {
+  float: left;
+  width: 20%;
+  font-size: 0.8em;
+  font-family: helvetica, arial, sans-serif; }
+
+.third-re {
+  float: left;
+  color: #6FBBB7;
+  width: 30%;
+  font-size: 0.8em;
+  font-family: helvetica, arial, sans-serif; }
+
+.a-repeat {
+  text-decoration: none;
+  color: #6FBBB7; }
+
+.more-meet {
+  font-size: 0.7em;
+  margin-top: 1em;
+  color: #6FBBB7; }
+
+.more-meet-a {
+  color: #6FBBB7;
+  text-decoration: none; }
 
 /************** Right Info Box *****************/
 .right-info-box {
