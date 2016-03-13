@@ -615,6 +615,9 @@
   color: #6FBBB7;
   font-weight: 300; }
 
+.a-repeat :hover {
+  text-decoration: underline; }
+
 .more-meet {
   font-size: 0.7em;
   margin-top: 1em;
@@ -810,5 +813,78 @@
   margin-top: 1em; }
 
 /************************ Footer *************************/
+footer {
+  width: 100%;
+  /*float: left;*/
+  margin-right: 2%;
+  background-color: #353E48; }
+  footer:last-child {
+    margin-right: auto; }
+
+.footer-box {
+  width: 83%;
+  /*float: left;*/
+  margin-right: 2%;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto; }
+  .footer-box:last-child {
+    margin-right: auto; }
+
+.top-footer-box {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 0.8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #4D555E; }
+
+.start-group {
+  float: left;
+  font-family: helvetica, arial, sans-serif;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 400; }
+
+.log-out {
+  float: right;
+  font-family: helvetica, arial, sans-serif;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 400; }
+
+.footer-choices {
+  overflow: hidden;
+  margin-top: 0.4em; }
+
+.footer-ul {
+  list-style-type: none;
+  padding-left: 0;
+  float: left; }
+
+.li-footer {
+  font-family: helvetica, arial, sans-serif;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: 1em;
+  display: inline-block;
+  font-weight: 300;
+  box-sizing: border-box;
+  padding-top: 0.2em; }
+
+.a-footer {
+  color: white;
+  text-decoration: none; }
+
+.copyright {
+  font-family: helvetica, arial, sans-serif;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  display: inline-block;
+  font-weight: 300;
+  box-sizing: border-box;
+  padding-top: 0.2em;
+  color: #BCBFC2;
+  font-size: 0.8em; }
 
 /*# sourceMappingURL=styles.css.map */
