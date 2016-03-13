@@ -95,6 +95,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .main-box {
   @include grid(15);
+  box-sizing: border-box;
 	background-color: #F4F4F4;
   border-top: 1px solid #F4F4F4;
   padding-top: 1em;
@@ -127,6 +128,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   background-image: url(http://photos1.meetupstatic.com/photos/theme_head/7/6/2/0/full_6870240.jpeg);
   height: 9.375em;
   background-position: top-center;
+  box-sizing: border-box;
   background-repeat: no-repeat;
   padding: 0;
 }
@@ -174,12 +176,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .li-header-A {
   @extend %li-header-deco;
+  box-sizing: border-box;
   padding-top: 0.2em;
 }
 
 .li-header-B {
   @extend %li-header-deco;
   margin-right: 1em;
+  box-sizing: border-box;
   padding-top: 0;
 }
 
@@ -191,6 +195,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .profile-logo{
   width: 1.35em;
   padding-top: 0.4em;
+  box-sizing: border-box;
   margin-right: 0.2em;
 }
 
@@ -198,7 +203,8 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .row{
   overflow: hidden;
-  max-width: 65.6em;
+  max-width: 64.4em;
+  box-sizing: border-box;
 }
 
 %info-box-deco{
@@ -222,6 +228,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .left-mid-info-box{
   border-top: 1px solid #ddd;
+  box-sizing: border-box;
   padding: 1em;
 }
 
@@ -255,6 +262,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   background-color: #EDEDED;
   font-family: helvetica, arial, sans-serif;
   text-align: center;
+  box-sizing: border-box;
   font-size: 0.85em;
   border-radius: 0.188em;
 }
@@ -272,6 +280,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   border-top: 1px solid #EBEBEB;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -279,6 +288,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   float: left;
   font-size: 0.85em;
   line-height: 1.5em;
+  box-sizing: border-box;
   text-align: left;
   width: 70%;
   font-family: helvetica, arial, sans-serif;
@@ -287,6 +297,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .count{
   float: right;
   padding-top: 0.2em;
+  box-sizing: border-box;
   width: 30%;
   font-family: helvetica, arial, sans-serif;
   font-size: 0.85em;
@@ -294,11 +305,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .social-icons{
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .facebook{
   float: left;
   padding: 0.2em;
+  box-sizing: border-box;
   margin-top: 0.8em;
 }
 
@@ -306,11 +319,13 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .people-wrap{
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .organizers{
   text-align: left;
   padding-left: 0;
+  box-sizing: border-box;
   margin-bottom: 0.2em;
   box-sizing: border-box;
 }
@@ -318,12 +333,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .names{
   font-size: 0.85em;
   line-height: 1.5em;
+  box-sizing: border-box;
   width: 20%;
   float: left;
 }
 
 .owl{
   float: right;
+  box-sizing: border-box;
   width: 50%;
 }
 
@@ -339,6 +356,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .description{
   display: inline-block;
+  box-sizing: border-box;
   font-size: 0.85em;
   text-align: left;
 }
@@ -357,6 +375,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   padding-top: 0.5em;
   padding-right: 0.5em;
   padding-left: 0.5em;
+  box-sizing: border-box;
 }
 
 %h-style-deco{
@@ -376,6 +395,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   text-align: left;
   padding: 1em;
   margin-right: 0.5em;
+  box-sizing: border-box;
   margin-bottom: 0.1em;
   overflow: hidden;
 }
@@ -388,6 +408,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   font-family: helvetica, arial, sans-serif;
   color: #6FBBB7;
   text-decoration: none;
+  box-sizing: border-box;
   margin-top: 0;
   font-weight: 300;
   font-size: 1em;
@@ -403,13 +424,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 %tab-deco{
   width: auto;
-  height: 0.6em;
+  /*height: 0.6em;*/
   text-align: center;
   color: #6FBBB7;
+  box-sizing: border-box;
   font-weight: 300;
   float: left;
   text-decoration: none;
-  padding: 0.4em 0.65em 0.65em 0.65em;
+  padding: 0.4em 0.65em 0em 0.65em;
   border-radius: 0.188em;
 }
 
@@ -431,6 +453,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
+  box-sizing: border-box;
 }
 
 .mid-box-li{
@@ -438,6 +461,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   border-bottom: 1px solid #ddd;
   background-color: white;
   text-align: left;
+  box-sizing: border-box;
   padding-top: 0.7em;
   padding-bottom: 2em;
 }
@@ -447,30 +471,35 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   font-weight: 700;
   text-decoration: none;
   font-size: 1.15em;
+  box-sizing: border-box;
   line-height: 1em;
 }
 
 .inward-midBox{
   border-top: 1px solid #F4F4F4;
   overflow: hidden;
+  box-sizing: border-box;
   margin-top: 0.7em;
 }
 
 .info-box{
   float: left;
   border-right: 1px dashed #F4F4F4;
+  box-sizing: border-box;
   width: 68%;
   padding-top: 0.3em;
 }
 
 .campus-info{
   padding-bottom: 0.2em;
+  box-sizing: border-box;
 }
 
 .tiy{
   font-family: helvetica, arial, sans-serif;
   text-align: left;
   display: block;
+  box-sizing: border-box;
   text-decoration: none;
   font-size: 1em;
   color: #6FBBB7;
@@ -481,6 +510,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   text-align: left;
   display: block;
   color: #575757;
+  box-sizing: border-box;
   font-weight: 300;
   padding-top: 0.3em;
   font-size: 0.85em;
@@ -495,6 +525,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   list-style-type: none;
   overflow: hidden;
   padding-left: 0;
+  box-sizing: border-box;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
 }
@@ -502,6 +533,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .li-pic{
   list-style-type: none;
   float: left;
+  box-sizing: border-box;
   padding-right: 0.2em;
 }
 
@@ -512,6 +544,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .arrow-style{
   font-size: 1.45em;
   padding-left: 0.1em;
+  box-sizing: border-box;
   text-align: center;
   color: #6FBBB7;
   background-color: #D7E9F6;
@@ -524,6 +557,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0.5em;
+  box-sizing: border-box;
   color: #575757;
   padding-bottom: 0.3em;
 }
@@ -531,6 +565,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .learn-more{
   color: #6FBBB7;
   font-size: 0.5em;
+  box-sizing: border-box;
   font-weight: 300;
   font-family: helvetica, arial, sans-serif;
   padding-bottom: 0.3em;
@@ -542,6 +577,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   font-family: helvetica, arial, sans-serif;
   font-size: 0.9em;
   font-weight: 300;
+  box-sizing: border-box;
 
 }
 
@@ -560,12 +596,14 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .date-time{
   float: right;
   width: 30%;
+  box-sizing: border-box;
   padding-top: 0.3em;
 }
 
 .mid-list{
   list-style-type: none;
   padding-left: 0;
+  box-sizing: border-box;
 }
 .thedt{
   text-decoration: none;
@@ -576,6 +614,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   font-family: helvetica, arial, sans-serif;
   line-height: 1;
   color: #575757;
+  box-sizing: border-box;
   font-weight: 300;
   text-align: center;
 }
@@ -584,6 +623,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   font-family: helvetica, arial, sans-serif;
   line-height: 1;
   font-weight: 300;
+  box-sizing: border-box;
   color: #575757;
   text-align: center;
   font-size: 0.9em;
@@ -596,6 +636,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   background-color: #F4F4F4;
   color: #6FBBB7;
   padding: 0.5em;
+  box-sizing: border-box;
   margin-top: 0.7em;
   margin-bottom: 0.5em;
   margin-left: 0.5em;
@@ -612,6 +653,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   margin-top: 0.03em;
   margin-bottom: 0.03em;
   width: 85.5%;
+  box-sizing: border-box;
   border-radius: 0.188em;
 }
 
@@ -723,13 +765,12 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .right-info-box{
   @include grid(3.5);
   @extend %info-box-deco;
+  padding: 1em;
 }
 
 .right-h-wrap{
-  padding-top: 0.5em;
-  padding-right: 1em;
-  padding-left: 1em;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 .h-style-right{
@@ -737,7 +778,73 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   text-align: left;
 }
 
+.right-join-box{
+  border-top: 1px dotted #CBCBCB;
+  padding-top: 0.4em;
+}
 
+.people-wrap-right{
+  overflow: hidden;
+  padding-left: 0.5em;
+}
+
+.right-new-member{
+  font-size: 0.6em;
+  color: #545454;
+  font-weight: 300;
+  font-family: helvetica, arial, sans-serif;
+  text-align: left;
+
+}
+
+.names-right{
+  font-size: 0.85em;
+  text-align: left;
+  line-height: 1.5em;
+  width: 80%;
+  float: left;
+}
+
+.owl-right{
+  float: right;
+  width: 20%;
+}
+
+.profile-logo-right{
+  width: 1.85em;
+}
+
+.rsvp-ed{
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 300;
+  color: #545454;
+}
+
+.yesterday{
+  font-family: helvetica, arial, sans-serif;
+  margin-top: 0.3em;
+  font-weight: 300;
+  color: #545454;
+  font-size: 0.7em;
+  text-align: left;
+  padding-left: 0.7em;
+  margin-bottom: 1em;
+
+}
+
+.yesterdayB{
+  font-family: helvetica, arial, sans-serif;
+  margin-top: 0.3em;
+  font-weight: 300;
+  color: #545454;
+  font-size: 0.7em;
+  text-align: left;
+  padding-left: 0.7em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px dotted #CBCBCB;
+
+}
 
 
 
