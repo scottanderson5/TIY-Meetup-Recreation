@@ -157,6 +157,7 @@
   box-sizing: border-box;
   background-color: white;
   margin-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
   float: left; }
 
@@ -169,6 +170,105 @@
     margin-right: 0;
   }*/ }
 
+.left-mid-info-box {
+  border-top: 1px solid #ddd;
+  padding: 1em; }
+
+.location {
+  font-family: helvetica, arial, sans-serif;
+  color: #6FBBB7;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1em;
+  display: block; }
+
+.founded {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 300;
+  color: #545454;
+  text-align: left;
+  display: block;
+  margin-top: 0.4em;
+  font-size: 0.85em; }
+
+.a-loco {
+  color: #6FBBB7;
+  text-decoration: none; }
+
+.aboutus, .invite-friends {
+  margin-top: 1em;
+  padding: 0.4em;
+  background-color: #EDEDED;
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+  font-size: 0.85em;
+  border-radius: 0.188em; }
+
+.invite-friends {
+  margin-bottom: 1em; }
+
+.job-count {
+  border-top: 1px solid #EBEBEB;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  overflow: hidden; }
+
+.job {
+  float: left;
+  font-size: 0.85em;
+  line-height: 1.5em;
+  text-align: left;
+  width: 70%;
+  font-family: helvetica, arial, sans-serif; }
+
+.count {
+  float: right;
+  padding-top: 0.2em;
+  width: 30%;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 0.85em; }
+
+.social-icons {
+  overflow: hidden; }
+
+.facebook {
+  float: left;
+  padding: 0.2em;
+  margin-top: 0.8em; }
+
+/**************/
+.people-wrap {
+  overflow: hidden; }
+
+.organizers {
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 0.2em;
+  box-sizing: border-box; }
+
+.names {
+  font-size: 0.85em;
+  line-height: 1.5em;
+  width: 20%;
+  float: left; }
+
+.owl {
+  float: right;
+  width: 50%; }
+
+/****************/
+.we-about {
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 0.2em;
+  box-sizing: border-box;
+  font-weight: 300; }
+
+.description {
+  display: inline-block;
+  font-size: 0.85em;
+  text-align: left; }
+
 /********** Middle Info Box ********************/
 .middle-info-box {
   width: 49%;
@@ -177,7 +277,8 @@
   /*&:last-child {
     margin-right: 0;
   }*/
-  padding-left: 1em; }
+  padding-left: 1em;
+  padding-right: 1em; }
 
 .mid-h-wrap {
   padding-top: 0.5em;
@@ -410,6 +511,7 @@
   font-family: helvetica, arial, sans-serif;
   text-decoration: none;
   color: #6FBBB7;
+  font-weight: 300;
   font-size: 0.9em; }
 
 /**********/
@@ -454,7 +556,8 @@
 
 .a-repeat {
   text-decoration: none;
-  color: #6FBBB7; }
+  color: #6FBBB7;
+  font-weight: 300; }
 
 .more-meet {
   font-size: 0.7em;
@@ -464,6 +567,22 @@
 .more-meet-a {
   color: #6FBBB7;
   text-decoration: none; }
+
+/****************/
+.more-meetups {
+  width: 80%;
+  background-color: #E6E6E6;
+  border-radius: 0.188em;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+  margin: 0.8em auto;
+  font-size: 1.2em;
+  padding: 0.2em;
+  border-bottom: solid 2px #878787; }
+
+.a-meetups {
+  text-decoration: none;
+  color: #4C4C4C; }
 
 /************** Right Info Box *****************/
 .right-info-box {
