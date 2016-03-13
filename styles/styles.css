@@ -23,7 +23,10 @@
   color: #878787; }
 
 .nav-col-1 {
-  float: left; }
+  display: inline-block; }
+  @media (min-width: 768px) {
+    .nav-col-1 {
+      float: left; } }
 
 .col-topBig, .col-topSmall {
   font-family: helvetica, arial, sans-serif;
@@ -44,15 +47,19 @@
   line-height: 1.4; }
 
 .nav-col-2 {
-  color: red;
-  float: right;
   font-family: helvetica, arial, sans-serif;
   padding: 0.5em;
+  float: right;
   text-align: center;
   font-weight: 300;
   font-size: 1.5em; }
+  @media (min-width: 768px) {
+    .nav-col-2 {
+      float: right;
+      font-size: 1.8em; } }
 
 .nav-col-2 {
+  display: inline-block;
   /*float: right;
   color: #878787;
   padding-top: none;
@@ -72,9 +79,6 @@
 
 /***************************************/
 .banner {
-  width: 83%;
-  /*float: left;*/
-  margin-right: 2%;
   padding: 0;
   margin: 0 auto;
   /*height: 9.375em;*/
@@ -82,15 +86,23 @@
   box-sizing: border-box;
   /*width: 59.875em;*/
   overflow: hidden; }
-  .banner:last-child {
-    margin-right: auto; }
+  @media (min-width: 768px) {
+    .banner {
+      width: 83%;
+      /*float: left;*/
+      margin-right: 2%; }
+      .banner:last-child {
+        margin-right: auto; } }
 
 .banner-wrap {
   border: 1px solid #ddd;
   border-radius: 0.188em;
-  /*margin-right: auto;
-  margin-left: auto;*/
-  /*min-width: 59.875em;*/ }
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%; }
+  @media (min-width: 768px) {
+    .banner-wrap {
+      width: 100%; } }
 
 .div-header {
   background-image: url(http://photos1.meetupstatic.com/photos/theme_head/7/6/2/0/full_6870240.jpeg);
@@ -154,15 +166,17 @@
 /***********************************************/
 .row {
   overflow: hidden;
-  width: 100%;
-  /*float: left;*/
-  margin-right: 2%;
   /*min-width: 59.875em;*/
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box; }
-  .row:last-child {
-    margin-right: auto; }
+  @media (min-width: 768px) {
+    .row {
+      width: 100%;
+      /*float: left;*/
+      margin-right: 2%; }
+      .row:last-child {
+        margin-right: auto; } }
 
 .left-info-box, .middle-info-box, .right-info-box, .bottom-info-left, .bottom-info-right {
   border: 1px solid #ddd;
@@ -175,12 +189,17 @@
 
 /********** Left Info Box *********************/
 .left-info-box {
-  width: 23.5%;
-  /*float: left;*/
-  margin-right: 2%;
-  float: left; }
-  .left-info-box:last-child {
-    margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%; }
+  @media (min-width: 768px) {
+    .left-info-box {
+      width: 23.5%;
+      /*float: left;*/
+      margin-right: 2%;
+      float: left; }
+      .left-info-box:last-child {
+        margin-right: auto; } }
 
 .left-mid-info-box {
   border-top: 1px solid #ddd;
@@ -295,14 +314,19 @@
 
 /********** Middle Info Box ********************/
 .middle-info-box {
-  width: 49%;
-  /*float: left;*/
-  margin-right: 2%;
   padding-left: 1em;
   padding-right: 1em;
-  float: left; }
-  .middle-info-box:last-child {
-    margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%; }
+  @media (min-width: 768px) {
+    .middle-info-box {
+      width: 49%;
+      /*float: left;*/
+      margin-right: 2%;
+      float: left; }
+      .middle-info-box:last-child {
+        margin-right: auto; } }
 
 .mid-h-wrap {
   padding-top: 0.5em;
@@ -648,13 +672,18 @@
 
 /************** Right Info Box *****************/
 .right-info-box {
-  width: 23.5%;
-  /*float: left;*/
-  margin-right: 2%;
   padding: 1em;
-  float: left; }
-  .right-info-box:last-child {
-    margin-right: auto; }
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .right-info-box {
+      width: 23.5%;
+      /*float: left;*/
+      margin-right: 2%;
+      float: left; }
+      .right-info-box:last-child {
+        margin-right: auto; } }
 
 .right-h-wrap {
   text-align: center;
@@ -662,7 +691,10 @@
   box-sizing: border-box; }
 
 .h-style-right {
-  text-align: left; }
+  text-align: center; }
+  @media (min-width: 768px) {
+    .h-style-right {
+      text-align: left; } }
 
 .right-join-box {
   border-top: 1px dotted #CBCBCB;
@@ -730,41 +762,52 @@
 
 /****************** After Main Box *******************/
 .bottom-info {
-  width: 83%;
-  /*float: left;*/
-  margin-right: 2%;
   background-color: white;
   margin: 0 auto;
   padding-top: 3em;
   padding-bottom: 3em;
   overflow: hidden; }
-  .bottom-info:last-child {
-    margin-right: auto; }
+  @media (min-width: 768px) {
+    .bottom-info {
+      width: 83%;
+      /*float: left;*/
+      margin-right: 2%; }
+      .bottom-info:last-child {
+        margin-right: auto; } }
 
 .bottom-info-left {
-  width: 40.5%;
-  /*float: left;*/
-  margin-right: 2%;
   margin-left: auto;
   margin-top: 0;
   border: none;
-  float: left;
+  width: 70%;
+  margin-right: auto;
   text-align: left;
   overflow: hidden; }
-  .bottom-info-left:last-child {
-    margin-right: auto; }
+  @media (min-width: 768px) {
+    .bottom-info-left {
+      @inculde grid(5);
+      width: 50%;
+      float: left; } }
 
 .bottom-info-right {
-  width: 40.5%;
-  /*float: left;*/
-  margin-right: 2%;
-  float: right;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2em;
   background-color: white;
   border: none;
   margin-right: auto;
   overflow: hidden; }
-  .bottom-info-right:last-child {
-    margin-right: auto; }
+  @media (min-width: 768px) {
+    .bottom-info-right {
+      width: 40.5%;
+      /*float: left;*/
+      margin-right: 2%;
+      width: 50%;
+      float: right;
+      padding-top: 0; }
+      .bottom-info-right:last-child {
+        margin-right: auto; } }
 
 .get-start-button {
   width: 30%;
@@ -814,12 +857,8 @@
 
 /************************ Footer *************************/
 footer {
-  width: 100%;
-  /*float: left;*/
-  margin-right: 2%;
+  /*@include grid(12);*/
   background-color: #353E48; }
-  footer:last-child {
-    margin-right: auto; }
 
 .footer-box {
   width: 83%;
