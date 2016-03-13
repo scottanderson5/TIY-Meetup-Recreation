@@ -8,9 +8,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   width: ($geezy * $ind-col-width) + ($gut-width * ($geezy - 1));
   /*float: left;*/
   margin-right: $gut-width;
-  /*&:last-child {
-    margin-right: 0;
-  }*/
+  &:last-child {
+    margin-right: auto;
+  }
 }
 
 /***********************************/
@@ -372,7 +372,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /********** Middle Info Box ********************/
 
 .middle-info-box{
-  @include grid(5.8);
+  @include grid(6);
   @extend %info-box-deco;
   padding-left: 1em;
   padding-right: 1em;
@@ -783,10 +783,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 /************** Right Info Box *****************/
 
 .right-info-box{
-  @include grid(2.9);
+  @include grid(3);
   @extend %info-box-deco;
   padding: 1em;
-  float: right;
+  float: left;
 }
 
 .right-h-wrap{
@@ -963,6 +963,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   float: left;
   margin-top: 1em;
 }
+
+/************************ Footer *************************/
+
+
 
 
 
