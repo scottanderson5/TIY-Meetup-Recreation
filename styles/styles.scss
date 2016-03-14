@@ -46,10 +46,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .nav-col-1 {
   @extend %top-col;
-  display: inline-block;
-  @media (min-width:768px){
-    float: left;
-  } 
+  float: left;
 
 }
 
@@ -79,22 +76,18 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 %top-col-right {
   @extend %top-col;
+  color: red;
+  float: right;
   font-family: helvetica, arial, sans-serif;
   padding: 0.5em;
-  float: right;
   text-align: center;
   font-weight: 300;
-  font-size: 1.5em;
-  @media (min-width:768px){
-    float: right;
-    font-size: 1.8em;
-  }
+  font-size: 1.8em;
 
 }
 
 .nav-col-2 {
   @extend %top-col-right;
-  display: inline-block;
   /*float: right;
   color: #878787;
   padding-top: none;
@@ -126,6 +119,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   box-sizing: border-box;
   /*width: 59.875em;*/
   overflow: hidden;
+  width: 90%;
   @media (min-width:768px){
     @include grid(10);
   }
@@ -134,12 +128,9 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .banner-wrap{
   border: 1px solid #ddd;
   border-radius: 0.188em;
-  margin-right: auto;
-  margin-left: auto;
-  width: 90%;
-  @media (min-width:768px){
-    width: 100%;
-  }
+  /*margin-right: auto;
+  margin-left: auto;*/
+  /*min-width: 59.875em;*/
 }
 
 .div-header{
@@ -283,6 +274,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   text-decoration: none;
 }
 
+.a-loco:hover{
+  text-decoration: underline;
+}
+
 %left-bar-deco{
   margin-top: 1em;
   padding: 0.4em;
@@ -298,9 +293,27 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   @extend %left-bar-deco;
 }
 
+.aboutus:hover{
+  background-color: #F4F4F4;
+}
+
 .invite-friends{
   @extend %left-bar-deco;
   margin-bottom: 1em;
+}
+
+.invite-friends:hover{
+  background-color: #F4F4F4;
+}
+
+.a-infoBox{
+  text-decoration: none;
+  color: #6FBBB7;
+}
+
+.a-infoBox:hover{
+  text-decoration: underline;
+  background-color: #F4F4F4;
 }
 
 .job-count{
@@ -449,6 +462,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   line-height: 1em;
 }
 
+.middle-box-a:hover{
+  text-decoration: underline;
+}
+
 .mid-a-wrapB{
   @extend %mid-a-deco;
   padding-bottom: 0;
@@ -476,10 +493,18 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   border-left: 1px solid #ddd;
 }
 
+.mid-box-2a:hover{
+  text-decoration: underline;
+}
+
 .mid-box-2b{
   @extend %tab-deco;
   background-color: #F7F7F7;
   border: 1px solid #ddd;
+}
+
+.mid-box-2b:hover{
+  text-decoration: underline;
 }
 
 .mid-box-ul{
@@ -506,6 +531,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   font-size: 1.15em;
   box-sizing: border-box;
   line-height: 1em;
+}
+
+.h-style-li:hover{
+  text-decoration: underline;
 }
 
 .inward-midBox{
@@ -538,6 +567,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   color: #6FBBB7;
 }
 
+.tiy:hover{
+  text-decoration: underline;
+}
+
 .address{
   font-family: helvetica, arial, sans-serif;
   text-align: left;
@@ -552,6 +585,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .map{
   color: #6FBBB7;
   text-decoration: none;
+}
+
+.map:hover{
+  text-decoration: underline;
 }
 
 .pic-list{
@@ -619,9 +656,17 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   color: #6FBBB7;
 }
 
+.learn-a:hover{
+  text-decoration: underline;
+}
+
 .host-a{
   text-decoration: none;
   color: #6FBBB7;
+}
+
+.host-a:hover{
+  text-decoration: underline;
 }
 
 /*****/
@@ -692,6 +737,11 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .rsvp-a{
   text-decoration: none;
+}
+
+.rsvp-a:hover{
+  text-decoration: underline;
+  color: #6FBBB7;
 }
 
 .att-li{
@@ -770,7 +820,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   font-weight: 300;
 }
 
-.a-repeat :hover{
+.a-repeat:hover{
   text-decoration: underline;
 }
 
@@ -785,6 +835,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   color: #6FBBB7;
   box-sizing: border-box;
   text-decoration: none;
+}
+
+.more-meet-a:hover{
+  text-decoration: underline;
 }
 
 /****************/
@@ -806,6 +860,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   .a-meetups{
     text-decoration: none;
     color: #4C4C4C;
+}
+
+.more-meetups:hover{
+  background-color: #D7D7D7;
 }
 
 /************** Right Info Box *****************/
@@ -946,7 +1004,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 2em;
   background-color: white;
   border: none;
   margin-right: auto;
@@ -955,7 +1012,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
     @include grid(5);
     width: 50%;
     float: right;
-    padding-top: 0;
   }
 
 }
@@ -973,8 +1029,11 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   padding: 0.4em;
   float: left;
   border-bottom: solid 2px #851518;
-
 } 
+
+.get-start-button:hover{
+  background-color: #D02126;
+}
 
 .a-started{
     text-decoration: none;
@@ -1092,7 +1151,6 @@ footer {
   color: #BCBFC2;
   font-size: 0.8em;
 }
-
 
 
 
