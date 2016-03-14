@@ -158,6 +158,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .header-logos{
   height: 3em;
   margin: 0 auto;
+  overflow: hidden;
   background-color: white;
 }
 
@@ -176,7 +177,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 .header-ul-B{
   @extend %header-deco;
   float: right;
-  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 %li-header-deco{
@@ -194,6 +195,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 %li-header-deco:hover{
   background-color: #233139;
+  padding: 0.5em;
 }
 
 .li-header-A {
@@ -206,7 +208,6 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   @extend %li-header-deco;
   margin-right: 1em;
   box-sizing: border-box;
-  padding-top: 0;
 }
 
 .a-header{
@@ -219,11 +220,10 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .profile-logo{
-  width: 1.35em;
-  height: 1.8em;
-  padding-top: 0.4em;
+  width: 1em;
+  /*margin-top: 0.5em;
   box-sizing: border-box;
-  margin-right: 0.2em;
+  margin-right: 0.2em;*/
 }
 
 /***********************************************/

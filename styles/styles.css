@@ -119,6 +119,7 @@
 .header-logos {
   height: 3em;
   margin: 0 auto;
+  overflow: hidden;
   background-color: white; }
 
 .header-ul-A, .header-ul-B {
@@ -131,7 +132,7 @@
 
 .header-ul-B {
   float: right;
-  margin-top: 0.2em; }
+  margin-bottom: 0.2em; }
 
 .li-header-A, .li-header-B {
   font-family: helvetica, arial, sans-serif;
@@ -146,7 +147,8 @@
   line-height: 1em; }
 
 .li-header-A:hover, .li-header-B:hover {
-  background-color: #233139; }
+  background-color: #233139;
+  padding: 0.5em; }
 
 .li-header-A {
   box-sizing: border-box;
@@ -154,8 +156,7 @@
 
 .li-header-B {
   margin-right: 1em;
-  box-sizing: border-box;
-  padding-top: 0; }
+  box-sizing: border-box; }
 
 .a-header {
   text-decoration: none;
@@ -165,11 +166,10 @@
   color: white; }
 
 .profile-logo {
-  width: 1.35em;
-  height: 1.8em;
-  padding-top: 0.4em;
+  width: 1em;
+  /*margin-top: 0.5em;
   box-sizing: border-box;
-  margin-right: 0.2em; }
+  margin-right: 0.2em;*/ }
 
 /***********************************************/
 .row {
