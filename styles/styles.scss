@@ -129,6 +129,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   width: 90%;
   @media (min-width:768px){
     @include grid(10);
+    max-width: 59.875em;
   }
 }
 

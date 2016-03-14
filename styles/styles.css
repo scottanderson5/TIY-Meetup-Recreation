@@ -92,7 +92,8 @@
     .banner {
       width: 83%;
       /*float: left;*/
-      margin-right: 2%; }
+      margin-right: 2%;
+      max-width: 59.875em; }
       .banner:last-child {
         margin-right: auto; } }
 
